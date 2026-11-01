@@ -4,6 +4,8 @@
 
 Large Gaussian splat scenes on a standalone headset. The goal is an app that takes any finished splat scene, analyses it on the device and builds the level of detail it needs, so even a whole town stays smooth to move through. I test it on three large outdoor scenes I captured with TUM-XR.
 
+[See this project on majewski.studio](https://majewski.studio/#p9)
+
 `3D Gaussian Splatting` · `Drone capture` · `LCC Studio` · `Level of detail` · `visionOS` · `SuperSplat`
 
 | My role | Setting | Scale | Public scope |
@@ -15,8 +17,8 @@ Large Gaussian splat scenes on a standalone headset. The goal is an app that tak
 - **The problem.** A scene of a whole town or campus has tens of millions of splats. A standalone headset has to sort and draw them for both eyes at the display's rate, on a mobile chip and within its thermal limits.
 - **The goal.** An app that takes any finished Gaussian splat scene, the splats and not the photos behind them, analyses it on the device and builds the level of detail it needs to stay smooth on a standalone headset.
 - **What I did so far.** I captured three outdoor scenes with TUM-XR, from a drone and on the ground, and the scans were processed into splats in LCC Studio. On the headset they run with a dynamic level of detail that's computed on the device, so not every splat is drawn in every frame.
-- **Where it stands.** The recordings below are first results from the headset. The level of detail is still in development and is part of my research at TUM.
-- **The evidence.** The full scenes are public on SuperSplat, where anyone can open them in a browser. The recordings on this page come from the headset and the drone.
+- **Where it stands.** The headset recordings below are first results. The level of detail is still in development and is part of my research at TUM.
+- **The evidence.** The full scenes are public on SuperSplat, where anyone can open them in a browser. The recordings on this page come from the headset and the drone, except the flight over Leukerbad from the TUM-XR video.
 
 ## The scenes
 
@@ -34,7 +36,7 @@ The level of detail runs entirely on the headset, frame by frame, while the scen
 
 | Leukerbad | Technical University of Munich |
 |---|---|
-| ![The Leukerbad scene on a standalone headset. A facade gets sharper as the finer detail comes in](media/lod-leukerbad.gif) | ![The TUM scene on a standalone headset, sharp in the middle of the view and coarser towards the edges](media/lod-tum.gif) |
+| ![The Leukerbad scene on a standalone headset. A facade gets sharper as the finer detail comes in](media/lod-leukerbad.gif) | [![The TUM scene on a standalone headset, sharp in the middle of the view and coarser towards the edges](media/lod-tum.gif)](https://majewski.studio/assets/work/lod-tum.mp4) |
 
 *Recorded on the headset. In Leukerbad the facade gets sharper as the finer detail comes in. At TUM the middle of the view is sharp and the scene gets coarser towards the edges.*
 
@@ -48,7 +50,7 @@ The Bismarck Tower scene combines scans on the ground with a drone flight that c
 
 The flight over Leukerbad comes from [the TUM-XR video about the trip](https://drive.google.com/file/d/1k1klMZtWuolstWEeyUK1F0nhiU4wjV52/view), which I edited end to end.
 
-![A flight over the Gaussian splat model of Leukerbad](media/leukerbad-twin.gif)
+[![A flight over the Gaussian splat model of Leukerbad](media/leukerbad-twin.gif)](https://majewski.studio/assets/work/leukerbad-twin.mp4)
 
 ## Research context
 
